@@ -1,8 +1,26 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     background-color: black;
 }
+
+header {
+    display: flex;
+    background-color: white;
+    width: auto;
+    padding: 20px;
+    justify-content: center;
+}
+
+footer {
+    display: flex;
+    background-color: grey;
+    width: auto;
+    padding: 50px;
+    justify-content: center;
+    position: relative;
+    top: 1070px;
+    }
