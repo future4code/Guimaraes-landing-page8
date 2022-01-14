@@ -1,35 +1,95 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,500;0,700;1,500&display=swap');
-*{
+* {
     margin: 0;
     padding: 0;
+    width: auto;
     font-family: 'Roboto Mono', monospace;
 }
 
+
+
 body {
-    background-color: black;
+    background-color: #D2C2B0;
+
 }
 
 
 header {
+    background-color: rgb(32, 31, 36);
     display: flex;
-    background-color: white;
-    width: auto;
-    padding: 20px;
-    justify-content: center;
+    height: auto;
+    width: 100%;
+    position:absolute;
+    top:0;
+    box-shadow: 10px 10px 20px ;
+
 }
 
 footer {
+    background-color: rgb(32, 31, 36);
     display: flex;
-    background-color: grey;
-    width: auto;
-    padding: 50px;
-    justify-content: center;
-    position: relative;
-    top: 1070px;
-    }
+    height: 150px;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    display: grid;
+    align-content:space-between;
+    
 
-main{
-    background-color:#EDECE9;
 }
+
+footer > :nth-child(2){
+    font-size: 16px;
+}
+
+button {
+
+    background-color: rgba(0, 0, 0, 0);
+    color: #F3F4F9;
+    position: relative;
+    top: 29%;
+    left: 1100px;
+    font-size: 20px;
+    border: none;
+    margin: 10px 20px 20px;
+    /* transition: all .5s; */
+    border:05px solid transparent;
+}
+
+button :hover{
+    border: 2px solid #D2C2B0;
+    border-radius: 0%;
+    margin: 3px;
+}
+
+nav{
+    position: relative;
+    right: 50px;
+
+    
+}
+
+img {
+    display: flex;
+    height: 100px;
+    margin-top: 10px;
+    margin-left: 20px;
+    position: relative;
+    
+}
+
+
+
+.container{
+    display: grid;
+    justify-content: center;
+    margin-bottom: 90px;
+    color: #F3F4F9;
+    text-decoration: none;
+}
+
+#atendimento{
+    margin-left: 123px;
+    color: #F3F4F9
+}
+
 
