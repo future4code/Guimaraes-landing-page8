@@ -1,21 +1,16 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,500;0,700;1,500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+    width: auto;
     font-family: 'Roboto Mono', monospace;
 }
+
 header {
- 
-}
-main{
-    height: 800px;
-}
-header {
+    background-color: rgb(32, 31, 36);
     display: flex;
-    background-color: white;
-    width: auto;
-    padding: 5vh;
-    justify-content: center;
 }
 .espaco-h2{
     height: 300px;
