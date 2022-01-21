@@ -129,7 +129,7 @@ header {
 #corpo-credito>*{
     padding: 15px;
 }
-.imagem-apresentacao{
+.imagem-credito{
     grid-row: 1/2;
     grid-column: 1/4;
     margin-left: 90px;
