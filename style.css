@@ -8,6 +8,10 @@
 
 }
 
+main{
+    height: 800px;
+}
+
 header {
     background-color: rgb(32, 31, 36);
     display: flex;
@@ -50,6 +54,7 @@ header {
     height: 200px;
 
 }
+
 .espaco-h2{
     height: 300px;
     display: flex;
@@ -368,13 +373,89 @@ legend {
     height: 150px;
     margin-right: 60px;
 }
-.contato{
+.espaco-contato *{
     text-decoration:none; 
     color:#1f1f24;
     font-style: bold;
     font-size: 20px;
+    display: flex;
+    align-content: space-between;
 }
 
+
+
+/* page análise de crédito */
+
+
+
+#corpo-credito{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 3fr;
+    grid-template-rows: 5fr 5fr;
+}
+#back{
+    background: #f3f4f9;
+    height: 100vh;
+}
+#corpo-credito>*{
+    padding: 15px;
+}
+.imagem-apresentacao{
+    grid-row: 1/2;
+    grid-column: 1/4;
+    margin-left: 90px;
+    margin-top: 150px;
+}
+.text-credito{
+    grid-row: 1/2;
+    grid-column: 3/5;
+    margin-top: 150px;
+    font-size: 21px;
+    margin-left: 150px;
+    margin-right: 90px;
+    
+}
+.tabela{
+    grid-row: 2/3;
+    grid-column: 1/4;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.imagem-tabela{
+    grid-row: 2/3;
+    grid-column: 4/5;
+    display: flex;
+    justify-self:end;
+    margin-right: 90px;
+    margin-top: 60px;
+}
+.tabela{
+    margin-left: 60px;
+}
+table{
+    border-spacing: 10px;
+}
+.tabela>h3{
+    margin-bottom: 40px;
+    margin-top: 60px;
+    font-size: 30px;
+}
+.item-tabela-1{
+    background:#d2c2b0;
+    height: 30px;
+    font-size: 21px;
+}
+.item-tabela{
+    background: #f4efe9;
+    height: 40px;
+    font-size: 21px;
+}
+.rodape-tabela{
+    margin-top: 50px;
+    font-size: 21px;
+}
 @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
     main{
         height: 600px;
@@ -453,4 +534,79 @@ legend {
     .contato{
         font-size: 15px;
     }
+
+    /*Page Credito pessoal*/
+
+    #corpo-credito{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .imagem-apresentacao{
+        grid-row: 1/2;
+        grid-column: 1/4;
+        margin-left: 30px;
+        margin-top: 30px;
+       
+    }
+
+    .text-credito{
+        margin-top: 60px;
+        font-size: 16px;
+        margin-left: 150px;
+        margin-right: 60px;
+        
+    }
+    .tabela{
+        grid-row: 2/3;
+        grid-column: 1/4;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /* #back{
+        background: #f3f4f9;
+        height: 100vh;
+    }
+    #corpo-credito>*{
+        padding: 15px;
+    }
+    
+    
+    
+    
+    .imagem-tabela{
+        grid-row: 2/3;
+        grid-column: 4/5;
+        display: flex;
+        justify-self:end;
+        margin-right: 90px;
+        margin-top: 60px;
+    }
+    .tabela{
+        margin-left: 60px;
+    }
+    table{
+        border-spacing: 10px;
+    }
+    .tabela>h3{
+        margin-bottom: 40px;
+        margin-top: 60px;
+        font-size: 30px;
+    }
+    .item-tabela-1{
+        background:#d2c2b0;
+        height: 30px;
+        font-size: 21px;
+    }
+    .item-tabela{
+        background: #f4efe9;
+        height: 40px;
+        font-size: 21px;
+    }
+    .rodape-tabela{
+        margin-top: 50px;
+        font-size: 21px;
+    } */
 }
