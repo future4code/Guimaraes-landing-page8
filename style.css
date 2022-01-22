@@ -17,18 +17,23 @@ header {
     flex-direction: row;
     justify-content: space-between;
     margin-right: 0;
-    
+    padding: 0 10px;
+
 }
 
-nav{
+nav {
     position: relative;
-    top:50px;
+    top: 50px;
     right: 70px;
-    
+
 }
 
-nav > .btn_menu{
-    width: 50px;
+nav button {
+    width: 100px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 18px;
+    border-radius: 15%;
 }
 
 .espaco-h2 {
@@ -404,26 +409,67 @@ footer {
     flex-direction: row;
     justify-content: space-around;
     position: relative;
-    top: 500px;
+    align-content: flex-end;
+    text-align: left;
+    top: 700px;
+    height: fit-content;
+    line-height: 30px;
 
 
 }
 
-#footer-index{
+
+
+#footer-index {
     position: relative;
-    top:1000px;
+    top: 1000px;
+    font-size: larger;
+    text-decoration: none;
+}
+
+#footer-credito {
+    position: relative;
+    top: 1000px;
 }
 
 .redes-sociais {
     display: flex;
     flex-direction: column;
+    text-decoration: none;
+
+}
+
+.icone-redes-sociais {
+    text-decoration: none;
 }
 
 .info {
     display: flex;
     flex-direction: column;
+    font-size: large;
 }
 
+.lista-redes-sociais {
+    list-style: none;
+}
+
+#atendimento {
+    text-align: left;
+}
+
+#email {
+    text-align: left;
+}
+
+#telefone {
+    text-align: left;
+    text-decoration: none;
+
+}
+
+#funcionamento {
+    text-align: left;
+}
 
 
 
@@ -433,40 +479,39 @@ footer {
 /*formulario*/
 
 #area {
-    position: relative;
-    left: 37%;
-    top: 100px;
-    width: 320px;
-    height: 270px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
-
 /* #area #formulario {
     position: absolute;
     display: block;
 } */
 
 fieldset {
-    background-color: #d2c2b000;
-    width: 500px;
-    height: 500px;
+    background-color: #1f1f244f;
+    width: 600px;
+    height: 650px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     border: transparent;
     position: relative;
-    top: 0px;
-    box-shadow: #0b0e1181 2px 2px 2px 2px;
+    top: 90px;
+    right: 450px;
+    border-radius: 1%;
 }
 
 legend {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 36px;
     position: relative;
-    top: 35px;
-    left: 150px;
+    top: 75px;
+    left: 50px;
 }
 
 #formulario label {
     position: relative;
-    top: 40px;
+    top: 100px;
     left: 50px;
     margin-right: 5px;
     font-size: 18px;
@@ -476,55 +521,105 @@ legend {
 #formulario input.campo_nome {
     background-color: #faefe9;
     position: absolute;
-    left: 120px;
-    top: 43px;
+    left: 125px;
+    top: 100px;
     width: 338px;
+    border:none;
 }
 
 
 #formulario input.campo_email {
     background-color: #faefe9;
     position: absolute;
-    left: 120px;
-    top: 65px;
+    left: 125px;
+    top: 122px;
     margin-top: 2px;
     width: 338px;
+    border:none;
 }
 
 #formulario input.campo_telefone {
     background-color: #faefe9;
     position: absolute;
-    left: 120px;
-    top: 88px;
+    left: 125px;
+    top: 147px;
     margin-top: 2px;
     width: 338px;
+    border:none;
 }
 
 #formulario textarea.msg {
     position: relative;
-    top: 50px;
-    left: 50px;
-    width: 410px;
-    height: 250px;
+    top: 125px;
+    left: 160px;
+    width: 412px;
+    height: 300px;
     background-color: #faefe9;
+    border:none;
 }
 
 .imagem-terminal {
-    position: relative;
-    left: 380px;
-    bottom: 530px;
-    width: 100px;
-
-
+    
+    width: 400px;
+    height: 400px;
 }
+
+.imagem-telefone{
+    width: 220px;
+    height: 220px;
+    position: relative;
+    left:870px;
+    bottom:170px;
+    
+}
+
 
 
 
 #formulario input.btn_submit {
-    border-style: dashed;
+    border-style: none;
     position: absolute;
-    bottom: 0.5em;
-    right: 150px;
+    bottom: 17px;
+    right: 0px;
     width: 200px;
-    background-color: #faefe9;
+    font-size: 20px;
+    background-color: #1f1f2400;
+    border-radius:none;
+    font-weight:bolder;
+}
+
+.estilo-topo {
+    background-color: #1f1f24;
+    border:none;
+    color: white;
+}
+
+.faq{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    top:300px;
+    background-color: #1f1f244f;
+    padding:50px;
+    
+}
+
+.ideias{
+    width:200px;
+    height: 200px;
+}
+
+.duvidas{
+    position: relative;
+    top:370px;
+    left:322px;
+    font-size: 24px;
+}
+
+.faq > p{
+    position: relative;
+    left:150px;
+    top:20px;
+    padding: 25px;
 }
