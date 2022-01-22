@@ -44,40 +44,23 @@ nav > .btn_menu{
     margin-bottom: 30px;
 }
 
-#apresentacao-index{
-    height: 50vh;
-
 #apresentacao-index {
     height: 500px;
-
     background-color: #f3f4f9;
     display: grid;
     grid-template-columns: 1fr 1fr 3fr;
-    grid-template-rows: 2fr 2fr;
+    grid-template-rows: 2fr 3fr;
 }
 
 #apresentacao-index>p {
     padding: 100px 75px 60px;
-    font-size: 16px;
-    grid-row: 1/3;
-    grid-column: 3/4;
 }
-
-
-#apresentacao-index>.imagem-mulher{
-   grid-row: 2/3;
-   grid-column: 1/2;
-   display: flex;
-   flex-direction: column;
-   align-self: flex-end;
-   margin-left: 60px;
 
 #apresentacao-index>.imagem-mulher {
     grid-row: 2/3;
     grid-column: 1/2;
     align-self: flex-end;
     margin-left: 60px;
-
 }
 
 #apresentacao-index>.imagem-homem {
@@ -86,15 +69,10 @@ nav > .btn_menu{
     align-self: flex-end;
 }
 
-
-.imagem-homem,.imagem-mulher{
-    width: 100%;
-
 #apresentacao-index>p {
     font-size: 20px;
     grid-row: 1/3;
     grid-column: 3/4;
-
 }
 
 .espaco-depoimentos {
@@ -112,14 +90,13 @@ nav > .btn_menu{
     display: grid;
     grid-template-columns: 1fr 2fr 1fr 2fr;
     grid-row: 2fr 3fr;
-    height: 50vh;
+    height: 350px;
 }
 
 .imagem-1 {
     margin-left: 60px;
     display: flex;
-    align-self: center;
-
+    align-self: flex-end;
 }
 
 .depoimento-1 {
@@ -128,17 +105,11 @@ nav > .btn_menu{
     align-self: center;
     width: 65%;
 
-    font-size: 16px;
-    margin-left: 30px;
-   
-
-
-
 }
 
 .imagem-2 {
     display: flex;
-    align-self: center;
+    align-self: flex-end;
 }
 
 .depoimento-2 {
@@ -148,16 +119,9 @@ nav > .btn_menu{
     width: 65%;
     margin-left: 15px;
 
-    font-size: 16px;
-   
-} 
-.espaco-contato{
-
-
 }
 
 .espaco-contato {
-
     display: flex;
     justify-content: flex-end;
     margin-top: 300px;
@@ -169,7 +133,7 @@ nav > .btn_menu{
     text-decoration: none;
     color: #1f1f24;
     font-style: bold;
-    font-size: 25px;
+    font-size: 20px;
     display: flex;
     align-content: space-between;
 }
@@ -195,11 +159,7 @@ nav > .btn_menu{
     padding: 15px;
 }
 
-.imagem-credito{
-
-
 .imagem-apresentacao {
-
     grid-row: 1/2;
     grid-column: 1/4;
     margin-left: 90px;
@@ -279,7 +239,6 @@ table {
 
     #apresentacao-index {
         height: 70vh;
-        width: 100%;
         background-color: #f3f4f9;
         display: grid;
         grid-template-columns: 1fr 1fr 2fr;
@@ -319,16 +278,13 @@ table {
         display: grid;
         grid-template-columns: 1fr 2fr;
         grid-row: 1fr 1fr;
-        height: 50vh;
+        height: 550px;
     }
 
     .imagem-1 {
         grid-column: 2/3;
         margin-left: 0px;
         margin-top: 15px;
-        height: 25%;
-        display: flex;
-        flex-direction: column;
     }
 
     .depoimento-1 {
@@ -342,7 +298,6 @@ table {
     .imagem-2 {
         grid-column: 2/3;
         margin-top: 30px;
-        height: 25%;
     }
 
     .depoimento-2 {
