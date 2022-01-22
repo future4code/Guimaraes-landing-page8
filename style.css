@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,500;0,700;1,500&display=swap');
 
 * {
@@ -8,39 +7,62 @@
     font-family: 'Roboto Mono', monospace;
 }
 
-main{
+main {
     height: 800px;
 }
 
 header {
     background-color: rgb(32, 31, 36);
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 0;
+    
 }
 
-.espaco-h2{
+nav{
+    position: relative;
+    top:50px;
+    right: 70px;
+    
+}
+
+nav > .btn_menu{
+    width: 50px;
+}
+
+.espaco-h2 {
     height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: end;
 }
-.espaco-h2>h2{
+
+.espaco-h2>h2 {
     font-size: 40px;
     margin-left: 60px;
     margin-bottom: 30px;
 }
+
 #apresentacao-index{
     height: 50vh;
+
+#apresentacao-index {
+    height: 500px;
+
     background-color: #f3f4f9;
-    display:grid;
+    display: grid;
     grid-template-columns: 1fr 1fr 3fr;
     grid-template-rows: 2fr 2fr;
 }
-#apresentacao-index>p{
+
+#apresentacao-index>p {
     padding: 100px 75px 60px;
     font-size: 16px;
     grid-row: 1/3;
     grid-column: 3/4;
 }
+
 
 #apresentacao-index>.imagem-mulher{
    grid-row: 2/3;
@@ -49,17 +71,33 @@ header {
    flex-direction: column;
    align-self: flex-end;
    margin-left: 60px;
+
+#apresentacao-index>.imagem-mulher {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    align-self: flex-end;
+    margin-left: 60px;
+
 }
-#apresentacao-index>.imagem-homem{
+
+#apresentacao-index>.imagem-homem {
     grid-row: 2/3;
     grid-column: 2/3;
     align-self: flex-end;
 }
 
+
 .imagem-homem,.imagem-mulher{
     width: 100%;
+
+#apresentacao-index>p {
+    font-size: 20px;
+    grid-row: 1/3;
+    grid-column: 3/4;
+
 }
-.espaco-depoimentos{
+
+.espaco-depoimentos {
     font-size: 20px;
     height: 300px;
     display: flex;
@@ -68,51 +106,68 @@ header {
     margin-bottom: 20px;
     margin-left: 60px;
 }
-#depoimentos{
+
+#depoimentos {
     background-color: #f3f4f9;
     display: grid;
-    grid-template-columns:1fr 2fr 1fr 2fr;
+    grid-template-columns: 1fr 2fr 1fr 2fr;
     grid-row: 2fr 3fr;
     height: 50vh;
 }
- .imagem-1{
+
+.imagem-1 {
     margin-left: 60px;
     display: flex;
     align-self: center;
 
 }
-.depoimento-1{
+
+.depoimento-1 {
     display: flex;
     flex-direction: column;
     align-self: center;
     width: 65%;
+
     font-size: 16px;
     margin-left: 30px;
    
+
+
+
 }
-.imagem-2{
+
+.imagem-2 {
     display: flex;
     align-self: center;
 }
-.depoimento-2{
+
+.depoimento-2 {
     display: flex;
     flex-direction: column;
     align-self: center;
     width: 65%;
     margin-left: 15px;
+
     font-size: 16px;
    
 } 
 .espaco-contato{
+
+
+}
+
+.espaco-contato {
+
     display: flex;
     justify-content: flex-end;
     margin-top: 300px;
     height: 150px;
     margin-right: 60px;
 }
-.espaco-contato *{
-    text-decoration:none; 
-    color:#1f1f24;
+
+.espaco-contato * {
+    text-decoration: none;
+    color: #1f1f24;
     font-style: bold;
     font-size: 25px;
     display: flex;
@@ -125,93 +180,113 @@ header {
 
 
 
-#corpo-credito{
+#corpo-credito {
     display: grid;
     grid-template-columns: 1fr 1fr 2fr 3fr;
     grid-template-rows: 5fr 5fr;
 }
-#back{
+
+#back {
     background: #f3f4f9;
     height: 100vh;
 }
-#corpo-credito>*{
+
+#corpo-credito>* {
     padding: 15px;
 }
+
 .imagem-credito{
+
+
+.imagem-apresentacao {
+
     grid-row: 1/2;
     grid-column: 1/4;
     margin-left: 90px;
     margin-top: 150px;
 }
-.text-credito{
+
+.text-credito {
     grid-row: 1/2;
     grid-column: 3/5;
     margin-top: 150px;
     font-size: 21px;
     margin-left: 150px;
     margin-right: 90px;
-    
+
 }
-.tabela{
+
+.tabela {
     grid-row: 2/3;
     grid-column: 1/4;
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.imagem-tabela{
+.imagem-tabela {
     grid-row: 2/3;
     grid-column: 4/5;
     display: flex;
-    justify-self:end;
+    justify-self: end;
     margin-right: 90px;
     margin-top: 60px;
 }
-.tabela{
+
+.tabela {
     margin-left: 60px;
 }
-table{
+
+table {
     border-spacing: 10px;
 }
-.tabela>h3{
+
+.tabela>h3 {
     margin-bottom: 40px;
     margin-top: 60px;
     font-size: 30px;
 }
-.item-tabela-1{
-    background:#d2c2b0;
+
+.item-tabela-1 {
+    background: #d2c2b0;
     height: 30px;
     font-size: 21px;
 }
-.item-tabela{
+
+.item-tabela {
     background: #f4efe9;
     height: 40px;
     font-size: 21px;
 }
-.rodape-tabela{
+
+.rodape-tabela {
     margin-top: 50px;
     font-size: 21px;
 }
+
 @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    main{
+    main {
         height: 600px;
     }
-    .espaco-h2{
+
+    .espaco-h2 {
         height: 10vh;
     }
-    .espaco-h2>h2{
+
+    .espaco-h2>h2 {
         font-size: 30px;
     }
-    #apresentacao-index{
+
+    #apresentacao-index {
         height: 70vh;
         width: 100%;
         background-color: #f3f4f9;
-        display:grid;
+        display: grid;
         grid-template-columns: 1fr 1fr 2fr;
         grid-template-rows: 1fr 1fr;
     }
-    #apresentacao-index>p{
+
+    #apresentacao-index>p {
         padding: 30px 0px 30px;
         margin-top: 20px;
         font-size: 15px;
@@ -219,31 +294,35 @@ table{
         grid-column: 2/4;
         margin-right: 30px;
     }
-    
-    #apresentacao-index>.imagem-mulher{
-       grid-row: 2/3;
-       grid-column: 1/3;
-       align-self: flex-end;
-       margin-left: 60px;
-       width: 75%;
+
+    #apresentacao-index>.imagem-mulher {
+        grid-row: 2/3;
+        grid-column: 1/3;
+        align-self: flex-end;
+        margin-left: 60px;
+        width: 75%;
     }
-    #apresentacao-index>.imagem-homem{
+
+    #apresentacao-index>.imagem-homem {
         grid-row: 2/3;
         grid-column: 3/4;
         align-self: flex-end;
         width: 75%;
     }
-    .espaco-depoimentos{
+
+    .espaco-depoimentos {
         font-size: 15px;
         height: 150px;
     }
-    #depoimentos{
+
+    #depoimentos {
         display: grid;
-        grid-template-columns:1fr 2fr;
+        grid-template-columns: 1fr 2fr;
         grid-row: 1fr 1fr;
         height: 50vh;
     }
-    .imagem-1{
+
+    .imagem-1 {
         grid-column: 2/3;
         margin-left: 0px;
         margin-top: 15px;
@@ -251,58 +330,65 @@ table{
         display: flex;
         flex-direction: column;
     }
-    .depoimento-1{
+
+    .depoimento-1 {
         font-size: 14px;
         width: 80%;
         margin-top: 20px;
         grid-column: 1/3;
         margin-left: 30px;
     }
-    .imagem-2{
+
+    .imagem-2 {
         grid-column: 2/3;
         margin-top: 30px;
         height: 25%;
     }
-    .depoimento-2{
+
+    .depoimento-2 {
         font-size: 14px;
         margin-top: 20px;
         width: 80%;
         grid-column: 1/3;
         margin-left: 30px;
-    } 
-    .espaco-contato{
+    }
+
+    .espaco-contato {
         margin-top: 100px;
     }
-    .contato{
+
+    .contato {
         font-size: 15px;
     }
 
     /*Page Credito pessoal*/
 
-    #corpo-credito{
+    #corpo-credito {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
     }
-    .imagem-apresentacao{
+
+    .imagem-apresentacao {
         grid-row: 1/2;
         grid-column: 1/4;
         margin-left: 30px;
         margin-top: 30px;
-       
+
     }
 
-    .text-credito{
+    .text-credito {
         margin-top: 60px;
         font-size: 16px;
         margin-left: 150px;
         margin-right: 60px;
-        
+
     }
-    .tabela{
+
+    .tabela {
         grid-row: 2/3;
         grid-column: 1/4;
-        display:flex;
+        display: flex;
         flex-direction: column;
         justify-content: center;
     }
@@ -351,4 +437,139 @@ table{
         margin-top: 50px;
         font-size: 21px;
     } */
+}
+
+
+footer {
+    background-color: rgb(32, 31, 36);
+    color: white;
+    padding: 50px;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    top: 500px;
+
+
+}
+
+#footer-index{
+    position: relative;
+    top:1000px;
+}
+
+.redes-sociais {
+    display: flex;
+    flex-direction: column;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+/*formulario*/
+
+#area {
+    position: relative;
+    left: 37%;
+    top: 100px;
+    width: 320px;
+    height: 270px;
+}
+
+/* #area #formulario {
+    position: absolute;
+    display: block;
+} */
+
+fieldset {
+    background-color: #d2c2b000;
+    width: 500px;
+    height: 500px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border: transparent;
+    position: relative;
+    top: 0px;
+    box-shadow: #0b0e1181 2px 2px 2px 2px;
+}
+
+legend {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 36px;
+    position: relative;
+    top: 35px;
+    left: 150px;
+}
+
+#formulario label {
+    position: relative;
+    top: 40px;
+    left: 50px;
+    margin-right: 5px;
+    font-size: 18px;
+}
+
+
+#formulario input.campo_nome {
+    background-color: #faefe9;
+    position: absolute;
+    left: 120px;
+    top: 43px;
+    width: 338px;
+}
+
+
+#formulario input.campo_email {
+    background-color: #faefe9;
+    position: absolute;
+    left: 120px;
+    top: 65px;
+    margin-top: 2px;
+    width: 338px;
+}
+
+#formulario input.campo_telefone {
+    background-color: #faefe9;
+    position: absolute;
+    left: 120px;
+    top: 88px;
+    margin-top: 2px;
+    width: 338px;
+}
+
+#formulario textarea.msg {
+    position: relative;
+    top: 50px;
+    left: 50px;
+    width: 410px;
+    height: 250px;
+    background-color: #faefe9;
+}
+
+.imagem-terminal {
+    position: relative;
+    left: 380px;
+    bottom: 530px;
+    width: 100px;
+
+
+}
+
+
+
+#formulario input.btn_submit {
+    border-style: dashed;
+    position: absolute;
+    bottom: 0.5em;
+    right: 150px;
+    width: 200px;
+    background-color: #faefe9;
 }
